@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Branch Data</h1>
+    <table border="1">
+        <tr>
+            <th>Bank Name</th>
+            <th>IFSC</th>
+            <th>Branch</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>City</th>
+            <th>District</th>
+            <th>State</th>
+        </tr>
+        {% for branch in branches %}
+        <tr>
+            <td>{{ branch.bank_name.bank_name }}</td>
+            <td>{{ branch.ifsc }}</td>
+            <td>{{ branch.branch }}</td>
+            <td>{{ branch.address }}</td>
+            <td>{{ branch.contact }}</td>
+            <td>{{ branch.city }}</td>
+            <td>{{ branch.district }}</td>
+            <td>{{ branch.state }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
+</body>
+</html>
+
+
+
+
+
+
+
+
